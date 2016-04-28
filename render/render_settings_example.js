@@ -12,6 +12,8 @@ var title_mappings = [
 {pattern : /Figure/, mapto : 'Matlab'},
 {pattern : /Inotebook/, mapto : 'INotebook'},
 {pattern : /.pdf/, mapto : 'Papers'},
+{pattern : /Finder/, mapto : 'Finder'},
+{pattern : /IntelliJ/, mapto : 'IntelliJ'},
 {pattern : /Gmail/, mapto : 'Gmail'},
 {pattern : /karpathy@/, mapto : 'Terminal'},
 {pattern : /Sublime Text/, mapto : 'SubText2'},
@@ -22,6 +24,9 @@ var title_mappings = [
 {pattern : /\.h.*Sublime Text/, mapto : 'SubText2 Coding'},
 {pattern : /__LOCKEDSCREEN/, mapto : 'Locked Screen'}, // __LOCKEDSCREEN is a special token
 {pattern : /TeXworks/, mapto : 'Latex'},
+{pattern : /Texpad/, mapto : 'Latex'},
+{pattern : /Messenger/, mapto : 'Facebook'},
+{pattern : /facebook/, mapto : 'Facebook'},
 ];
 
 // be very careful with ordering in the above because titles
