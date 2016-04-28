@@ -24,6 +24,6 @@ def rewindTime(t):
 if __name__ == '__main__':
   if len(sys.argv) <= 1:
     # use right now
-    print rewindTime(int(time.time()))
+    print(rewindTime(int(time.time())))
   else:
-    print rewindTime(int(sys.argv[1]))
+    print(rewindTime(int(sys.argv[1])))

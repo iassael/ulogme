@@ -1,5 +1,9 @@
-import SocketServer
-import SimpleHTTPServer
+try:
+  import SocketServer
+  import SimpleHTTPServer
+except:
+  import socketserver as SocketServer
+  import http.server as SimpleHTTPServer
 import sys
 import cgi
 import os
@@ -69,6 +73,6 @@ class CustomHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
 
 httpd = SocketServer.ThreadingTCPServer((IP, PORT), CustomHandler)
 
-print 'Serving ulogme, see it on http://localhost:' + `PORT`
+print('Serving ulogme, see it on http://localhost:' + str(PORT))
 httpd.serve_forever()
 

@@ -45,7 +45,7 @@ class AppDelegate(NSObject):
 
   def writeActiveApp_(self, timer):
     if DEBUG_APP:
-      print 'Got active app callback at %d' % current_time()
+      print('Got active app callback at %d' % current_time())
     self.event_sniffer.write_active_app()
 
 
